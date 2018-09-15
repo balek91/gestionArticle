@@ -1,0 +1,24 @@
+@layout('layout')
+@section('content')
+    <section class="creationArticle">
+        <form action="POST" id="formCreateArticle">
+            <div class="row">
+                <label for="name">Nom de L'article</label>
+                <input type="text" name="name" id="inputName" value="{{name}}">
+            </div>
+            <div class="row">
+                <label for="prix">Prix</label>
+                <input type="number" name="prix" id="inputPrix" value="{{prix}}"><span>€</span>
+            </div>
+            <div class="row">
+                <label for="description">description</label>
+                <textarea name="description" id="description" >{{desc}}</textarea>
+            </div>
+            <div class="row">
+                <button id="cancel">Annuler</button>
+                <button id="register">Valider</button>
+            </div>
+        </form>
+    </section>
+    <script src="/js/create.js"></script>
+@endsection

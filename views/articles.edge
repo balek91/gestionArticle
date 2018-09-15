@@ -1,0 +1,18 @@
+@layout('layout')
+@section('content')
+    <div id="head">
+        <button id="addArticle">Ajouter un article</button>
+        <button id="deco">Déconnexion</button>
+    </div>
+    <div class="listContainer">
+        @each(article in articles)
+        <div class="container">
+            <span>Nom : {{article.name}}</span>
+            <span>Prix : {{article.prix}} €</span>
+            <span>description : {{article.desc}}</span>
+        </div> 
+        @endeach
+    </div>
+
+    <script src="/js/list.js"></script>
+@endsection

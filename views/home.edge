@@ -1,0 +1,12 @@
+@layout('layout')
+@section('content')
+    <form id="formulaireLogin" method="POST">
+        <span>Utilisateurs valides: {{ login }}</span>
+        <div class="row">
+            <label for="login"> Nom d'utilisateur : </label>
+            <input type="text" id="inputLogin" name="login">
+        </div>
+        <div class="row"><button>valider</button></div>
+    </form>
+    <script src="/js/home.js"></script>
+@endsection

@@ -1,0 +1,78 @@
+html, body{
+    margin :0;
+    padding : 0;
+    height: 100vh;
+}
+.creationArticle{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.creationArticle > form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 500px;
+    background: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.creationArticle > form > .row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.creationArticle > form > .row:last-child{
+    justify-content: space-around;
+}
+.creationArticle > form > .row:not(:first-child):not(:last-child){
+    margin-top: 10px
+}
+.creationArticle > form > .row > label{
+    flex: 1 1 0;
+}
+.creationArticle > form > .row > input,
+.creationArticle > form > .row > textarea{
+    flex: 2 1 0;
+    padding: 3px 5px;
+}
+.creationArticle > form > .row > textarea{
+    resize: none;
+    height: 50px;
+}
+.creationArticle > form > .row > *:nth-child(3){
+    flex: 0 0 0;
+    margin-left: 5px;
+}
+.creationArticle > form > .row > #register{
+    flex: 0 1 150px;
+}
+
+#inputName, #description{
+    margin-right: 15px;
+}
+/*  $   articles
+    ***************/
+#head{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items : center;
+    padding: 0 5px;
+}
+    #head > button:not(:first-child){
+        margin-left: 5px;
+    }
+.listContainer{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+        margin : 5px 5px;
+        max-width: 200px;
+    }
